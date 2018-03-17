@@ -62,10 +62,12 @@ body, html {
 }
 
 .title div h1 {
+  flex-flow: wrap;
   margin: 0;
   padding-bottom: 20px;
-  /* font-family: 'Permanent Marker', cursive; */
-  font-family: 'Rock Salt', cursive;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2.75em;
+  /* font-family: 'Rock Salt', cursive; */
 }
 
 .title div h3 {
@@ -73,29 +75,39 @@ body, html {
 }
 
 /* main sections */
-.info-boxes {
+main {
   display: grid;
-  grid-template-columns: repeat(3, minmax( 350px, 2fr));
-  height: 200px;
-  grid-gap: 10px;
-  margin-left: 5%;
-  margin-right: 5%;
+  grid-template-columns: 1fr 1fr minmax(100px, 1fr;);
+  grid-gap: 40px;
+  grid-template-areas: "a b";
+  justify-content: center;
+  align-content: center;
 }
 
-.box {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.info-boxes {
+  grid-area: b;
   align-items: center;
+  justify-content: center;
   background-color: white;
   opacity: .8;
   border-radius: 10%;
-  height: 200px;
 }
 
-.box a {
+.sub-title {
   text-decoration: none;
   color: black;
-  font-family: 'Rock Salt', cursive;
-  font-size: 1.5em;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.75em;
+}
+
+#info {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+#footer {
+  grid-area: a;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
 }
