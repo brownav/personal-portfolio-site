@@ -75,19 +75,21 @@ body, html {
 }
 
 /* main sections */
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr minmax(100px, 1fr;);
-  grid-gap: 40px;
-  grid-template-areas: "a b";
-  justify-content: center;
+.info-container {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: space-around;
   align-content: center;
+  height: 100px;
+
 }
 
-.info-boxes {
-  grid-area: b;
-  align-items: center;
+.box {
+  display: flex;
   justify-content: center;
+  align-items: center;
+  width: 250px;
   background-color: white;
   opacity: .8;
   border-radius: 10%;
@@ -100,12 +102,13 @@ main {
   font-size: 1.75em;
 }
 
-#info {
+info {
   width: 400px;
   display: flex;
   flex-direction: column;
 }
-#footer {
+
+footer {
   grid-area: a;
   width: 350px;
   display: flex;
