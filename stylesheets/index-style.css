@@ -8,13 +8,13 @@ body, html {
 }
 
 .background {
- /* background-image: url("https://i.pinimg.com/originals/e8/5c/ce/e85cceca1c3de4ee39e8a38fd0ec002b.jpg"); */
+ background-image: url("https://i.pinimg.com/originals/e8/5c/ce/e85cceca1c3de4ee39e8a38fd0ec002b.jpg");
 
- background-image: url("http://a1reproductions.com/blossoming-almond-tree-by-vincent-van-gogh.jpg");
+ /* background-image: url("http://a1reproductions.com/blossoming-almond-tree-by-vincent-van-gogh.jpg"); */
  height: 100%;
 
  background-position: center;
- background-repeat: no-repeat;
+ background-repeat: repeat-y;
  background-size: cover;
 }
 
@@ -25,11 +25,9 @@ body, html {
   align-items: center;
 
   height: 2.75em;
-  width: 100%;
-  position: fixed;
-  top: 0;
 
   background-color: white;
+  opacity: 0.9;
 }
 
 .nav-container a {
@@ -37,4 +35,46 @@ body, html {
   padding-right: 1em;
   text-decoration: none;
   color: black;
+}
+
+/* title */
+
+.title {
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+}
+
+.title div {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 25em;
+  height: 10em;
+  background-color: white;
+  opacity: 0.9;
+  border-radius: 10%;
+}
+
+.title div h1 {
+  margin: 0;
+  padding-bottom: 20px;
+  /* font-family: 'Permanent Marker', cursive; */
+  font-family: 'Rock Salt', cursive;
+}
+
+.title div h3 {
+  margin: 0;
+}
+
+/* main sections */
+.info-boxes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax( 350px, 2fr))
+
 }
