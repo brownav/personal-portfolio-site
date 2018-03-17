@@ -8,9 +8,9 @@ body, html {
 }
 
 .background {
- background-image: url("https://i.pinimg.com/originals/e8/5c/ce/e85cceca1c3de4ee39e8a38fd0ec002b.jpg");
+/* http://cms.stephaniegonot.com/media/w_800,q_90,c_limit/bvzu1tkw77upxyvrmjt6.jpg */
 
- /* background-image: url("http://a1reproductions.com/blossoming-almond-tree-by-vincent-van-gogh.jpg"); */
+ background-image: url("https://cdn.shopify.com/s/files/1/0908/9770/products/Maria_van_Oosterwyck_-_Bouquet_of_Flowers_in_a_Vase_-_Google_Art_Project.jpg?v=1454857327");
  height: 100%;
 
  background-position: center;
@@ -24,10 +24,10 @@ body, html {
   justify-content: flex-end;
   align-items: center;
 
-  height: 2.75em;
+  height: 2.25em;
 
   background-color: white;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .nav-container a {
@@ -57,7 +57,7 @@ body, html {
   width: 25em;
   height: 10em;
   background-color: white;
-  opacity: 0.9;
+  opacity: 0.8;
   border-radius: 10%;
 }
 
@@ -75,6 +75,27 @@ body, html {
 /* main sections */
 .info-boxes {
   display: grid;
-  grid-template-columns: repeat(3, minmax( 350px, 2fr))
+  grid-template-columns: repeat(3, minmax( 350px, 2fr));
+  height: 200px;
+  grid-gap: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
 
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  opacity: .8;
+  border-radius: 10%;
+  height: 200px;
+}
+
+.box a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Rock Salt', cursive;
+  font-size: 1.5em;
 }
