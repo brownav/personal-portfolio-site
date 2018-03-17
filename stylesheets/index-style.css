@@ -1,0 +1,40 @@
+body, html {
+  height: 100%;
+  font-family: 'Handlee', cursive;
+  font-weight: bold;
+  font-size: 1.1em;
+  /* font-family: 'Permanent Marker', cursive;
+  font-family: 'Rock Salt', cursive; */
+}
+
+.background {
+ /* background-image: url("https://i.pinimg.com/originals/e8/5c/ce/e85cceca1c3de4ee39e8a38fd0ec002b.jpg"); */
+
+ background-image: url("http://a1reproductions.com/blossoming-almond-tree-by-vincent-van-gogh.jpg");
+ height: 100%;
+
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+
+  height: 2.75em;
+  width: 100%;
+  position: fixed;
+  top: 0;
+
+  background-color: white;
+}
+
+.nav-container a {
+  padding-left: 1em;
+  padding-right: 1em;
+  text-decoration: none;
+  color: black;
+}
