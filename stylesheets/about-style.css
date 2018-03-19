@@ -14,6 +14,7 @@ body, html {
  background-size: cover;
 }
 
+/* navigation bar */
 .nav-container {
   display: flex;
   flex-direction: row;
@@ -31,6 +32,7 @@ body, html {
   border-right: dotted;
   }
 
+/* main section */
 .main-container {
   display: flex;
   flex-direction: row;
@@ -62,6 +64,7 @@ p {
   padding: 0px 15px;
 }
 
+/* footer */
 footer {
   display: flex;
   flex-direction: row;
