@@ -31,37 +31,6 @@ body, html {
   border-right: dotted;
   }
 
-.main-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  height: 90%;
-}
-
-.items {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  opacity: 0.8;
-  width: 400px;
-  word-spacing: .5em;
-  border-radius: 10%;
-}
-
-h1 {
-  margin: 0;
-  font-size: 2.75em;
-  font-family: 'Permanent Marker', cursive;
-}
-
-p {
-  padding: 0px 15px;
-}
-
 footer {
   display: flex;
   flex-direction: row;
@@ -91,4 +60,31 @@ footer {
   color: black;
   font-family: 'Permanent Marker', cursive;
   font-size: 1.75em;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  opacity: 0.8;
+  width: 400px;
+  word-spacing: .5em;
+  border-radius: 10%;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.75em;
+  font-family: 'Permanent Marker', cursive;
 }

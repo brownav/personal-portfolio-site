@@ -17,7 +17,7 @@ body, html {
 .nav-container {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-around;
   align-items: center;
   height: 40px;
   background-color: white;
@@ -25,10 +25,14 @@ body, html {
 }
 
 .nav-container a {
-  padding-left: 1em;
-  padding-right: 1em;
+  padding: 0 10%;
   text-decoration: none;
   color: black;
+  border-right: dotted;
+}
+
+.nav-container a:last-of-type {
+  border: none;
 }
 
 /* title */
@@ -76,10 +80,9 @@ body, html {
   justify-content: space-around;
   align-items: center;
   height: 330px;
-
 }
 
-.box {
+.info-container a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,6 +91,10 @@ body, html {
   background-color: white;
   opacity: .8;
   border-radius: 10%;
+}
+
+.info-container a:hover {
+  transform: scale(1.5, 1.5);
 }
 
 .sub-title {
